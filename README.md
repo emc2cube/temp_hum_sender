@@ -9,6 +9,7 @@ This Arduino project illustrates how to use an inexpensive DHT series temperatur
 The following two Arduino libraries are required and must be available in the Arduino sketchbook `libraries` directory.
 - DHT from https://github.com/markruys/arduino-DHT
 - WT450Sender from https://github.com/GraemeWieden/WT450Sender
+- JeeLib from https://github.com/jcw/jeelib
 
 For full step-by-step instructions on how to put together the hardware and software, take a look at this project's GitHub Page here:
 
