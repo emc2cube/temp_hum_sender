@@ -31,6 +31,9 @@ const bool DEBUG = false;
 byte houseCode = 15; // from 1 to 15
 byte channelCode = 4; // from 1 to 4
 
+// define how long to sleep between two transmissions
+byte SleepTime = 15; // Time in minutes
+
 DHT sensor; // create the sensor object
 WT450Sender sender; // create the sender object
 
@@ -78,6 +81,7 @@ void loop()
   Sleepy::loseSomeTime(10000); // send every 10 seconds
   }
   else
+  for (byte i = 0; i < SleepTime; ++i)
   Sleepy::loseSomeTime(60000); // send every 60 seconds
 }
 
